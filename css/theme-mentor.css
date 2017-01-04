@@ -1,0 +1,36 @@
+.wrap.xs-wrap {
+    padding: 5px 5px 5px 20px;
+    border: 1px solid #cecece;
+}
+
+.wrap h2 {
+    margin-bottom: 15px;
+}
+.tm_report_row {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.tm_message {
+    color: gray;
+}
+.tm_file, .tm_line {
+    font-weight: bold;
+}
+.tm_snippet {
+    font-style: italic;
+}
+.xs-screenshot {
+    width: 200px;
+}
+.xs-header {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #d8d8d8;
+}
+.xs-header .xs-info{
+    float: left;
+}
+.xs-header .theme-screenshot{
+    float: right;
+}

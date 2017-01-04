@@ -1,0 +1,22 @@
+== Simple == 
+
+###Currently supported validations:
+* Check All dynamic data escaped
+* Check  TGMPA force activation plugins
+* Check  TGMPA force activation plugins
+* Mark all tags in template files
+* Mark all tags in template files
+* Warn about query_posts() usage
+* capital_P_dangit control (disallow any WordPress spelling other than WordPress as is – that is WORDPRESS and WordPress, ugh)
+* wp_deregister_script(‘jquery’) is forbidden
+* wp_dequeue_script(‘jquery’) is forbidden
+* wp_enqueue_script(‘jquery’) is loaded
+* prevent global $data; call as a common troublemaker (props @pippinsplugins)
+
+###header.php specific
+
+* Make sure that wp_head is before
+* Check Title tag available in header.php
+###footer.php specific
+
+* Make sure that wp_footer is before
