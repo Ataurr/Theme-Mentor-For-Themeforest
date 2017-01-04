@@ -11,9 +11,9 @@ files and your includes in inner folders (plus functions.php).
 
 
 ###Currently supported validations:
-* Check All dynamic data escaped
-* Check  TGMPA force activation plugins
-* Check  TGMPA force activation plugins
+* Check All dynamic data escape
+* Check  TGMPA force activation and deactivation plugins
+* Check dirname(__FILE__)
 * Mark all tags in template files
 * Mark all tags in template files
 * Warn about query_posts() usage
@@ -27,11 +27,12 @@ files and your includes in inner folders (plus functions.php).
 
 * Make sure that wp_head is before
 * Check Title tag available in header.php
+
 ###footer.php specific
 
 * Make sure that wp_footer is before
 
-
+![Mentor](https://raw.githubusercontent.com/Ataurr/Theme-Mentor-For-Themeforest/master/screenshot.png)
 
 
 Different checks are being run to ensure the code quality of the theme. Theme-Check is more or less
