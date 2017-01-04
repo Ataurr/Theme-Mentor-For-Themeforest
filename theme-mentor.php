@@ -6,7 +6,7 @@
  * It's using different approaches to monitor for common problems regarding theme reviews from the
  * WordPress Theme Reviewers Team. It is prone to fault analysis, so use only as a reference for improving
  * your code base even further.
- * Plugin URI: https://github.com/mpeshev/Theme-Mentor
+ * Plugin URI: https://github.com/Ataurr/Theme-Mentor-For-Themeforest
  * Version: 0.1
  * Author: nofearinc, Ataurr
  * Author URI: http://devwp.eu/

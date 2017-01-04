@@ -1,6 +1,6 @@
 Theme-Mentor-For-Themeforest
 ============
-###Fork from [Theme-Mentor](https://github.com/mpeshev/Theme-Mentor)
+####Fork from [Theme-Mentor](https://github.com/mpeshev/Theme-Mentor)
 
 Theme Mentor For Themeforest - helper plugin for themeforest WordPress Themes , the cousin of Theme-Check reporting other possible theme issues
 
