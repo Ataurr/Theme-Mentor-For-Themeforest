@@ -227,6 +227,13 @@ class Mentor_Themeforest {
 		$folder		 = trailingslashit( $folder );
 		$directory	 = dir( $folder );
 
+		/* A list of folders excluded from the check. */
+		$excluded_folders = apply_filters( 'theme_mentory_excluded_folders', array() );
+
+		if ( in_array( basename( $folder ), $excluded_folders ) ) {
+			return;
+		}
+
 		while ( false !== ( $entry = $directory->read() ) ) {
 			// drop all empty folders, hidden folders/files and parents
 			if ( ( $entry[ 0 ] == "." ) )
