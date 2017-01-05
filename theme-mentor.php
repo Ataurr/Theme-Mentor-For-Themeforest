@@ -8,8 +8,8 @@
  * your code base even further.
  * Plugin URI: https://github.com/Ataurr/Theme-Mentor-For-Themeforest
  * Version: 0.1
- * Author: nofearinc, Ataurr
- * Author URI: http://devwp.eu/
+ * Author:  Ataurr, nofearinc
+ * Author URI: http://xpeedstudio.com/
  * License: GPLv2 or later
  *
  */
@@ -172,13 +172,26 @@ class Mentor_Themeforest {
 		echo '<div class="xs-info">';
 
 		echo '<h2>' . __( 'Theme Mentor For Themeforest', 'dx_theme_mentor' ) . '</h2>';
+
+		// is the form submitted
+		//Get the theme name for add within select box
+		if ( isset( $_POST[ 'dx_theme' ] ) ) {
+			$theme_name = $_POST[ 'dx_theme' ];
+			if ( isset( $themes[ $theme_name ] ) ) {
+				$theme		 = $themes[ $theme_name ];
+				// selected is the last submitted to $_POST
+				$selected	 = $theme->get_stylesheet();
+			}
+		}
+		//Print the validations issue
 		do_action( 'dx_theme_mentor_before_admin_page' );
 		include_once 'inc/templates/admin-template.php';
 		do_action( 'dx_theme_mentor_after_admin_page' );
 		echo '</div>';
-
+		
+		// add screenshot 
 		if ( isset( $_POST[ 'dx_theme' ] ) ) {
-			$screenshot = trailingslashit( $themes[ $_POST[ 'dx_theme' ] ]->get_template_directory_uri() );
+			$screenshot = trailingslashit( $themes[ $theme_name ]->get_template_directory_uri() );
 
 			echo '<div id="icon-edit" class="icon32-base-template theme-screenshot"><br><img class="xs-screenshot" src="' . $screenshot . 'screenshot.png" alt="" /></div>';
 		}
@@ -195,14 +208,11 @@ class Mentor_Themeforest {
 				$theme				 = $themes[ $theme_name ];
 				$this->theme_path	 = trailingslashit( $theme->get_template_directory() );
 
-				// selected is the last submitted to $_POST
-				$selected = $theme->get_stylesheet();
-
 				$this->run_tests();
 			}
 		}
 
-		
+
 
 		echo '</div>';
 	}
