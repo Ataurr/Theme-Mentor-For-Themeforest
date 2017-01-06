@@ -34,3 +34,6 @@
 .xs-header .theme-screenshot{
     float: right;
 }
+.xs-clear {
+    clear: both;
+}

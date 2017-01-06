@@ -169,10 +169,9 @@ class Mentor_Themeforest {
 
 		echo '<div class="wrap xs-wrap">';
 		echo '<div class="xs-header">';
-		echo '<div class="xs-info">';
-
 		echo '<h2>' . __( 'Theme Mentor For Themeforest', 'dx_theme_mentor' ) . '</h2>';
 
+		echo '<div class="xs-clear"></div><div class="xs-info">';
 		// is the form submitted
 		//Get the theme name for add within select box
 		if ( isset( $_POST[ 'dx_theme' ] ) ) {
@@ -188,7 +187,7 @@ class Mentor_Themeforest {
 		include_once 'inc/templates/admin-template.php';
 		do_action( 'dx_theme_mentor_after_admin_page' );
 		echo '</div>';
-		
+
 		// add screenshot 
 		if ( isset( $_POST[ 'dx_theme' ] ) ) {
 			$screenshot = trailingslashit( $themes[ $theme_name ]->get_template_directory_uri() );

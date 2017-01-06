@@ -15,7 +15,6 @@ files and your includes in inner folders (plus functions.php).
 * Check  TGMPA force activation and deactivation plugins
 * Check dirname(__FILE__)
 * Mark all tags in template files
-* Mark all tags in template files
 * Warn about query_posts() usage
 * capital_P_dangit control (disallow any WordPress spelling other than WordPress as is – that is WORDPRESS and WordPress, ugh)
 * wp_deregister_script(‘jquery’) is forbidden
@@ -43,3 +42,7 @@ What Theme Mentor does in addition is reporting everything that might or might n
 success rate is about 70%, but it serves as a reminder for common WPTRT review remarks for you to double check.
 After all, you don't lose anything. If you verify the report from Theme Mentor, you would either: a) confirm
 that your code base is in tact, or: b) fix a nasty error that Theme-Check is afraid to report (fault tolerance issues).
+
+
+####filter to exclude specific folder names from the checks.
+```theme_mentory_excluded_folders```
