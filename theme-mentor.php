@@ -209,6 +209,9 @@ class Mentor_Themeforest {
 
 				$this->run_tests();
 			}
+		} else {
+			include_once 'inc/templates/intro-template.php';
+			
 		}
 
 
