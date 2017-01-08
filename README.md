@@ -44,7 +44,7 @@ After all, you don't lose anything. If you verify the report from Theme Mentor, 
 that your code base is in tact, or: b) fix a nasty error that Theme-Check is afraid to report (fault tolerance issues).
 
 
-####Filter to exclude specific folder names from the checks.
+####Filter to exclude specific folder names from the [checks](https://github.com/Ataurr/Theme-Mentor-For-Themeforest/blob/master/theme-mentor.php#L233).
 ```
 theme_mentory_excluded_folders
 ```
