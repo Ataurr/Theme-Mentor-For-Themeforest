@@ -122,7 +122,7 @@ class Mentor_Themeforest {
 			if ( false === $file ) {
 				continue;
 			}
-
+			
 			// General
 			foreach ( $general_validations->common_validations as $pattern => $message ) {
 				$this->iterate_data( $pattern, $message, $functional_unique_only, $file );
