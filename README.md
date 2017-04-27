@@ -1,6 +1,5 @@
 Theme-Mentor-For-Themeforest
 ============
-#### Fork from [Theme-Mentor](https://github.com/mpeshev/Theme-Mentor)
 
 Theme Mentor For Themeforest - helper plugin for themeforest WordPress Themes , the cousin of Theme-Check reporting other possible theme issues
 
@@ -48,3 +47,11 @@ that your code base is in tact, or: b) fix a nasty error that Theme-Check is afr
 ```
 theme_mentory_excluded_folders
 ```
+##### Credits:
+
+[Theme-Mentor](https://github.com/mpeshev/Theme-Mentor)
+
+##### Copyright Ataurr
+
+Licence GPL 2+
+
