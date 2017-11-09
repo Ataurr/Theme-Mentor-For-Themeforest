@@ -1,15 +1,13 @@
 <?php
 
 class Footer_Validations implements Theme_Mentor_Executor {
-	private $wp_footer_found = false;
-	
+	private $wp_footer_found      = false;
+
 	// random defaults - need to compare further
-	private $wp_footer_line = -1;
-	private $body_close_tag_line = -1;
-	
-	private $file = array();
-	
-	private $error_message = '';
+	private $wp_footer_line       = -1;
+	private $body_close_tag_line  = -1;
+	private $file                 = [];
+	private $error_message        = [];
 	
 	public function crawl( $filename, $file ) { 
 		if( false !== strpos( $filename, 'footer.php') ) {
